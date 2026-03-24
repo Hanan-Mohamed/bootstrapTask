@@ -1,0 +1,484 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* custom  */
+
+.custom-btn {
+  font-size: 14px;
+  padding: 7px 25px !important  ;
+  background-color: rgb(236, 66, 4) !important;
+  color: white;
+}
+.custom-btn:focus,
+.custom-btn:hover {
+  background-color: rgba(236, 66, 4, 0.877) !important;
+}
+
+.custom-h3 {
+  color: rgb(49, 25, 12);
+}
+.custom-p {
+  font-size: 12px !important;
+}
+.custom-i {
+  color: rgba(255, 68, 0, 0.74);
+}
+
+.title-line {
+  width: 50px;
+  height: 2px;
+  background-color: orangered;
+  margin-top: 7px;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn:active:focus {
+  color: black;
+  box-shadow: none;
+  background-color: inherit;
+}
+
+/* navbar */
+.navbar .container #navbarContent .navbar-nav .nav-item .nav-link {
+  font-size: 14px;
+}
+.navbar .container #navbarContent .navbar-nav .nav-item .nav-link.active {
+  color: orangered !important;
+}
+.navbar .container #navbarContent .navbar-nav .nav-item .nav-link:hover {
+  color: orangered !important;
+}
+
+.navbar .container #navbarContent .btn {
+  border-radius: 35px !important;
+}
+
+.dropdown-menu {
+  font-size: 13px;
+}
+.dropdown-item:hover {
+  color: orangered !important;
+  background-color: transparent !important;
+}
+.dropdown-submenu > .dropdown-item:hover,
+.dropdown-submenu > .dropdown-item:focus {
+  color: orangered !important;
+  background-color: transparent !important;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown-submenu .dropdown-toggle::after {
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+/* hero */
+#hero {
+  background-color: rgb(252, 245, 242);
+  min-height: 90vh;
+  border-bottom: 2px solid rgb(250, 220, 204);
+  padding: 100px 4px 15px 4px;
+}
+#hero .container p {
+  font-size: 19px;
+}
+
+.bouncing {
+  animation: bounce 4s infinite ease-in-out;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* about */
+
+#about .container #contentContainer h5 {
+  color: rgba(104, 56, 28, 0.932);
+  font-size: 17px;
+}
+
+/* services */
+#services {
+  background-color: rgb(252, 245, 242);
+}
+
+#services .container .row .col .card h5 {
+  font-size: 14px;
+}
+
+#services .container .row .card {
+  border-radius: 10px !important;
+}
+#services .container .row .card:hover {
+  border-bottom: 2px solid orangered !important;
+  transform: translateY(-4px);
+}
+
+/* Portfolio */
+
+#Portfolio .container .d-flex .filter-btn {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  font-size: 14px;
+}
+
+#Portfolio .container .d-flex .filter-btn.active {
+  color: #ff6a00 !important;
+}
+
+#Portfolio .container .row .portfolio-item {
+  transition: all 0.4s ease;
+}
+#Portfolio .container .row .portfolio-item .image-container img {
+  transition: transform 0.3s ease;
+  border-radius: 10px !important;
+}
+
+#Portfolio .container .row .portfolio-item.hide {
+  opacity: 0;
+  transform: scale(0.8);
+  pointer-events: none;
+  position: absolute;
+}
+#Portfolio .container .row .portfolio-item .image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+
+  border-radius: 10px;
+}
+#Portfolio .container .row .portfolio-item .image-container:hover .overlay {
+  transform: translateX(0);
+}
+
+#Portfolio .container .row .portfolio-item.show {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+}
+#Portfolio
+  .container
+  .portfolio-item
+  .image-container
+  .overlay
+  .button-group
+  .btn-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: rgba(255, 68, 0, 0.575);
+  border: none;
+}
+#Portfolio
+  .container
+  .portfolio-item
+  .image-container
+  .overlay
+  .button-group
+  .btn-circle:hover {
+  background-color: orangered !important;
+  color: white;
+}
+#Portfolio
+  .container
+  .portfolio-item
+  .image-container
+  .overlay
+  .button-group
+  .btn-circle
+  i {
+  pointer-events: none;
+}
+#Portfolio
+  .container
+  .portfolio-item
+  .image-container
+  .overlay
+  div.text-center
+  h6 {
+  font-size: 14px;
+}
+#Portfolio
+  .container
+  .portfolio-item
+  .image-container
+  .overlay
+  div.text-center
+  p {
+  font-size: 12px;
+}
+
+/* Question */
+
+#Question {
+  background-color: rgb(252, 245, 242);
+}
+#Question .container .accordion .accordion-item {
+  border-bottom: 1px solid rgba(238, 236, 236, 0.993);
+}
+
+#Question .container .accordion {
+  background-color: red;
+}
+#Question
+  .container
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button {
+  justify-content: flex-start;
+}
+#Question
+  .container
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button::after {
+  order: -1;
+  margin-left: 1px;
+  margin-right: 10px;
+  width: 13px;
+  height: 13px;
+  background-size: 13px;
+}
+#Question
+  .container
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:hover {
+  color: rgb(148, 42, 3);
+}
+#Question
+  .container
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed)::after {
+  filter: brightness(0) saturate(100%) invert(20%) sepia(90%) saturate(1200%)
+    hue-rotate(5deg);
+
+  transition: filter 0.2s ease;
+}
+#Question
+  .container
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: rgb(148, 42, 3);
+}
+
+#Question .container .accordion .accordion-item .collapse .accordion-body {
+  font-size: small;
+}
+
+#Question .container .accordion,
+#Question .container .accordion .accordion-item,
+#Question
+  .container
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button,
+#Question .container .accordion .accordion-item .collapse .accordion-body {
+  background-color: rgb(252, 245, 242);
+}
+
+/* Team */
+
+#Team .container .row .team-container .team-box {
+  position: relative;
+  overflow: hidden;
+}
+#Team .container .row .team-container .team-box .team-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(82, 81, 81, 0.4);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+#Team .container .row .team-container .team-box:hover .team-overlay {
+  opacity: 1;
+}
+#Team .container .row .team-container .team-box .team-overlay .social {
+  position: absolute;
+  top: 2px;
+  left: -40px;
+  transition: 0.4s;
+}
+
+#Team .container .row .team-container .team-box:hover .social {
+  left: 2px;
+  background: rgba(43, 42, 42, 0.349);
+  height: 100%;
+  padding: 2px;
+}
+#Team .container .row .team-container .team-box .team-overlay .social i {
+  color: white;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+#Team .container .row .team-container .team-box .team-info {
+  position: absolute;
+  bottom: -20px;
+  color: white;
+  transition: 0.4s;
+  /* background: #be1616; */
+}
+#Team .container .row .team-container .team-box:hover .team-info {
+  bottom: 15px;
+}
+#Team .container .row .team-container .team-box:hover .team-info h5 {
+  font-size: 15px;
+}
+#Team .container .row .team-container .team-box:hover .team-info span {
+  font-size: 12px;
+}
+
+/* clients */
+#clients {
+  background-color: rgb(252, 245, 242);
+}
+.clients-slider img {
+  max-width: 100px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.clients-slider img:hover {
+  opacity: 1;
+}
+
+/* dots */
+.swiper-pagination {
+  margin-top: 60px;
+}
+
+.swiper-pagination-bullet {
+  background: white;
+  opacity: 1;
+  border: 1px solid rgb(248, 125, 81);
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background: rgb(248, 125, 81);
+}
+
+/* Contact */
+#Contact .container .row > div {
+  /* background-color: #ff6a00; */
+}
+#Contact .container .row div > div.parent {
+  border-top: 2px solid orangered;
+  border-bottom: 2px solid orangered;
+}
+#Contact .container .row div div.parent label {
+  font-size: 14px;
+}
+#Contact .container .row div div.parent textarea,
+#Contact .container .row div div.parent input {
+  font-size: 12px;
+}
+#Contact .container .row div div.parent textarea:focus,
+#Contact .container .row div div.parent input:focus {
+  box-shadow: none;
+  border: 1px solid rgb(228, 227, 227);
+}
+
+#Contact .container .row div div.parent i {
+  background-color: rgba(255, 68, 0, 0.171);
+  border-radius: 50%;
+}
+#Contact .container .row div div.parent h5 {
+  color: rgb(51, 20, 9);
+  font-size: 17px;
+}
+#Contact .container .row div div.parent p {
+  font-size: 12px;
+  color: rgba(71, 71, 71, 0.829);
+}
+
+/* newSelleter */
+#newSelleter {
+  background-color: rgb(252, 245, 242);
+}
+
+#newSelleter .container h4 {
+  color: rgb(51, 20, 9);
+}
+#newSelleter .container p {
+  color: rgba(71, 71, 71, 0.829);
+  font-size: 15px;
+}
+#newSelleter .container .input-group button {
+  padding: 10px 23px !important;
+  border-radius: 5px;
+}
+#newSelleter .container .input-group input:focus {
+  box-shadow: none;
+}
+
+/* info */
+
+#info .container .div-container {
+  color: rgba(71, 71, 71, 0.829);
+  font-size: small;
+}
+#info .container .div-container h5 {
+  color: rgb(63, 63, 63);
+}
+#info .container .div-container:last-of-type p {
+  color: rgba(54, 54, 54, 0.932);
+}
+#info .container .div-container:last-of-type i {
+  background-color: orangered;
+  border-radius: 50%;
+  color: white;
+}
+
+/* footer */
+#footer {
+  background-color: rgb(252, 245, 242);
+}
+
+#footer .container {
+  font-size: small;
+  color: rgb(46, 45, 45);
+}
